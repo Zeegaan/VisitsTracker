@@ -6,7 +6,7 @@ angular.module('umbraco.resources').factory('trackingResource',
             // this calls the ApiController we setup earlier
             getAll: function () {
                 return umbRequestHelper.resourcePromise(
-                    $http.get("backoffice/My/VisitsTracker/GetAll"),
+                    $http.get("backoffice/My/TrackerApi/GetAll"),
                     "Failed to retrieve all Person data");
             }
         };
