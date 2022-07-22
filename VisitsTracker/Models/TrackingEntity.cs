@@ -1,4 +1,5 @@
-﻿using NPoco;
+﻿using System.Data;
+using NPoco;
 using Umbraco.Cms.Infrastructure.Persistence.DatabaseAnnotations;
 using Umbraco.Cms.Infrastructure.Persistence.Dtos;
 
@@ -20,6 +21,6 @@ public class TrackingEntity
     public int NumberOfVisits { get; set; }
     
     [Column("nodeId")]
-    [ForeignKey(typeof(NodeDto))]
+    [ForeignKey(typeof(NodeDto), OnDelete = Rule.Cascade)]
     public int NodeId { get; set; }
 }
