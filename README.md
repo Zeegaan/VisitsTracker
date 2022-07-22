@@ -23,7 +23,7 @@ When you have made some changes you then want to change, open a terminal in the 
 This will generate a nuget package file in the Release directory. 
 In your umbraco project, you can then either add the nuget source manually through your IDE, and then install the package.
 Or you can run the following command in the root of your umbraco project:
-`dotnet add package TrackerPackage -s {{PATH TO YOUR PACKAGE RELEASE FOLDER HERE}} --prerelease`
+`dotnet add package VisitsTracker -s {{PATH TO YOUR PACKAGE RELEASE FOLDER HERE}} --prerelease`
 Real example: 
-`dotnet add package TrackerPackage -s C:\Users\Zeegan\Documents\GitHub\VisitsTracker\Release --prerelease`
+`dotnet add package VisitsTracker -s C:\Users\Zeegan\Documents\GitHub\VisitsTracker\Release --prerelease`
 
