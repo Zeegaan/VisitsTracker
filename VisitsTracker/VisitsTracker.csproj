@@ -23,5 +23,14 @@
       <Pack>true</Pack>
       <PackagePath>buildTransitive</PackagePath>
     </None>
+    <None Remove="Release\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Release\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Release\**" />
   </ItemGroup>
 </Project>
