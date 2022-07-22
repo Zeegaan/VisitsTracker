@@ -33,7 +33,12 @@ public class TrackingRepository : RepositoryBase, ITrackingRepository
     {
         Database.Save(entity);
     }
-    
+
+    public void Delete(TrackingEntity entity)
+    {
+        Database.Delete(entity);
+    }
+
     public IEnumerable<TrackingEntity> GetAll()
     {
         var sql = SqlContext.Sql()
