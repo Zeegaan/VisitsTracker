@@ -14,11 +14,11 @@ public class TrackingMapper : ITrackingMapper
     }
     public Tracking Map(TrackingEntity src)
     {
-        var content = _contentService.GetById(src.Id);
+        var content = _contentService.GetById(src.NodeId);
         return new()
         {
             ContentId = src.NodeId,
-            ContentName = content.PublishName ?? content.Name,
+            ContentName = content?.PublishName ?? content?.Name,
             NumberOfVisits = src.NumberOfVisits,
         };
     }
