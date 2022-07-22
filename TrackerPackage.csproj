@@ -3,11 +3,16 @@
     <TargetFramework>net6.0</TargetFramework>
     <ContentTargetFolders>.</ContentTargetFolders>
     <Version>1.0.0</Version>
-    <Product>TrackerPackage</Product>
-    <PackageId>TrackerPackage</PackageId>
-    <Title>TrackerPackage</Title>
-    <Description>...</Description>
+    <Product>VisitsTracker</Product>
+    <PackageId>VisitsTracker</PackageId>
+    <Title>VisitsTracker</Title>
+    <Description>This installs VisitsTracker, a new "Tracking" section and a dashboard in Umbraco! The Tracking section is secured and only available for users that are part of the Administrators group</Description>
     <PackageTags>umbraco plugin package</PackageTags>
+    <Authors>Umbraco</Authors>
+    <PackageProjectUrl>https://github.com/Zeegaan/VisitsTracker</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <LangVersion>latestmajor</LangVersion>    
   </PropertyGroup>
 
   <ItemGroup>
