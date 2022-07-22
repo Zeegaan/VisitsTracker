@@ -8,11 +8,6 @@ angular.module("umbraco").controller("CustomWelcomeDashboardController", functio
     });
 
     trackingResource.getAll().then(function (response){
-        console.log("data")
-        console.log(response);
         vm.Trackings = response;
-        
-        console.log("Trackings");
-        console.log(vm.Trackings);
     });
 });
