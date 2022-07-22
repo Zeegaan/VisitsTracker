@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<language>
+    <area alias="sections">
+        <key alias="tracking">Tracking</key>
+    </area>
+    <area alias="treeHeaders">
+        <key alias="trackerGroup">Tracking</key>
+    </area>
+    <area alias="dashboardTabs">
+        <key alias="trackerDashboard">Welcome</key>
+    </area>
+</language>

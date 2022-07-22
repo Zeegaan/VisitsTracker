@@ -1,0 +1,30 @@
+﻿{
+    "name": "TrackerPackage",
+    "version": "",
+    "allowPackageTelemetry": true,
+    "sections": [
+    {
+    "alias": "tracking",
+    "name": "Tracking"
+    }
+    ],
+    "dashboards":  [
+    {
+    "alias": "trackerDashboard",
+    "view":  "/App_Plugins/TrackerPackage/TrackerDashboard.html",
+    "sections":  [ "tracking" ],
+    "weight": -10,
+    "access": [
+    { "deny": "translator" },
+    { "grant": "admin" }
+    ]
+    }
+    ],
+    "javascript": [
+        "~/App_Plugins/TrackerPackage/customwelcomedashboard.controller.js",
+        "~/App_Plugins/TrackerPackage/tracking.resource.js"
+    ],
+    "css": [
+        "~/App_Plugins/TrackerPackage/customwelcomedashboard.css"
+    ]
+}
