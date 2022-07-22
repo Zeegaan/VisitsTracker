@@ -4,25 +4,21 @@ using TrackerPackage.Models;
 using TrackerPackage.Repositories;
 using Umbraco.Cms.Core.Services;
 using Umbraco.Cms.Infrastructure.Scoping;
-using Umbraco.Extensions;
 
 namespace TrackerPackage.Services;
 
 public class TrackingService : ITrackingService
 {
     private readonly IScopeProvider _scopeProvider;
-    private readonly IContentService _contentService;
     private readonly ITrackingRepository _trackingRepository;
     private readonly ITrackingMapper _trackingMapper;
 
     public TrackingService(
         IScopeProvider scopeProvider,
-        IContentService contentService,
         ITrackingRepository trackingRepository,
         ITrackingMapper trackingMapper)
     {
         _scopeProvider = scopeProvider;
-        _contentService = contentService;
         _trackingRepository = trackingRepository;
         _trackingMapper = trackingMapper;
     }
@@ -33,7 +29,7 @@ public class TrackingService : ITrackingService
 
         using (_scopeProvider.CreateScope(autoComplete: true))
         {
-            entities = _trackingRepository.GetAll().WhereNotNull();
+            entities = _trackingRepository.GetAll();
         }
 
         foreach (var entity in entities)
