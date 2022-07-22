@@ -18,7 +18,7 @@ and call the `ReportVisit(int contentId)` method where you pass the contents id,
 This does get tedious if you have a lot of templates though! But you are in luck, if all your views has a master template, you can just inject the above in your master template instead!
 (Most typical master template is the `_Layout.cshtml` file)
 
-# How to work with this package
+# Contributing to VisitsTracker
 When you have made some changes you then want to change, open a terminal in the root of this project, and run the following command: `dotnet pack --configuration Release /p:Version=1.0.0-rc001 --output .\Release`
 This will generate a nuget package file in the Release directory. 
 In your umbraco project, you can then either add the nuget source manually through your IDE, and then install the package.
