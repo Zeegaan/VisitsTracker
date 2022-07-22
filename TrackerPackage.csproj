@@ -10,8 +10,6 @@
     <PackageTags>umbraco plugin package</PackageTags>
     <Authors>Umbraco</Authors>
     <PackageProjectUrl>https://github.com/Zeegaan/VisitsTracker</PackageProjectUrl>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
     <LangVersion>latestmajor</LangVersion>    
   </PropertyGroup>
 
