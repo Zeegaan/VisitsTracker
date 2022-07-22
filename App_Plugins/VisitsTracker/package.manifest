@@ -11,7 +11,7 @@
     "dashboards":  [
     {
     "alias": "trackerDashboard",
-    "view":  "/App_Plugins/TrackerPackage/TrackerDashboard.html",
+    "view":  "/App_Plugins/VisitsTracker/TrackerDashboard.html",
     "sections":  [ "tracking" ],
     "weight": -10,
     "access": [
@@ -21,10 +21,10 @@
     }
     ],
     "javascript": [
-        "~/App_Plugins/TrackerPackage/customwelcomedashboard.controller.js",
-        "~/App_Plugins/TrackerPackage/tracking.resource.js"
+        "~/App_Plugins/VisitsTracker/customwelcomedashboard.controller.js",
+        "~/App_Plugins/VisitsTracker/tracking.resource.js"
     ],
     "css": [
-        "~/App_Plugins/TrackerPackage/customwelcomedashboard.css"
+        "~/App_Plugins/VisitsTracker/customwelcomedashboard.css"
     ]
 }

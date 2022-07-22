@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using TrackerPackage.Models;
+using VisitsTracker.Models;
 
-namespace TrackerPackage.Repositories;
+namespace VisitsTracker.Repositories;
 
 public interface ITrackingRepository
 {

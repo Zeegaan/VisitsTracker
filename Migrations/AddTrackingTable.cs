@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
-using TrackerPackage.Models;
 using Umbraco.Cms.Infrastructure.Migrations;
 using Umbraco.Extensions;
+using VisitsTracker.Models;
 
-namespace TrackerPackage.Migrations;
+namespace VisitsTracker.Migrations;
 
 public class AddTrackingTable : MigrationBase
 {

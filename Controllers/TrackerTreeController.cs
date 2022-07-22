@@ -7,9 +7,9 @@ using Umbraco.Cms.Core.Trees;
 using Umbraco.Cms.Web.BackOffice.Trees;
 using Umbraco.Cms.Web.Common.Attributes;
 
-namespace TrackerPackage;
+namespace VisitsTracker;
 [Tree("tracking", "tracker", IsSingleNodeTree = true, TreeTitle = "Tracker", TreeGroup="trackerGroup", SortOrder=5)]
-[PluginController("TrackerPackage")]
+[PluginController("VisitsTracker")]
 public class TrackerTreeController : TreeController
 {
     private readonly IMenuItemCollectionFactory _menuItemCollectionFactory;

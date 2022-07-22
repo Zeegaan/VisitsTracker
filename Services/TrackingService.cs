@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
-using TrackerPackage.Mappers;
-using TrackerPackage.Models;
-using TrackerPackage.Repositories;
 using Umbraco.Cms.Infrastructure.Scoping;
+using VisitsTracker.Mappers;
+using VisitsTracker.Models;
+using VisitsTracker.Repositories;
 
-namespace TrackerPackage.Services;
+namespace VisitsTracker.Services;
 
 public class TrackingService : ITrackingService
 {

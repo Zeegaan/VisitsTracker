@@ -7,7 +7,7 @@ using Umbraco.Cms.Core.Services;
 using Umbraco.Cms.Infrastructure.Migrations;
 using Umbraco.Cms.Infrastructure.Migrations.Upgrade;
 
-namespace TrackerPackage.Migrations;
+namespace VisitsTracker.Migrations;
 
 public class RunTrackingEntityMigration : INotificationHandler<UmbracoApplicationStartingNotification>
 {

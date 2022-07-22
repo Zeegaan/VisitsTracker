@@ -1,11 +1,11 @@
-﻿using TrackerPackage.Mappers;
-using TrackerPackage.Repositories;
-using TrackerPackage.Services;
-using Umbraco.Cms.Core.Composing;
+﻿using Umbraco.Cms.Core.Composing;
 using Umbraco.Cms.Core.DependencyInjection;
 using Umbraco.Extensions;
+using VisitsTracker.Mappers;
+using VisitsTracker.Repositories;
+using VisitsTracker.Services;
 
-namespace TrackerPackage.Composers;
+namespace VisitsTracker.Composers;
 
 public class ServicesComposer : IComposer
 {

@@ -1,6 +1,6 @@
-﻿using TrackerPackage.Models;
+﻿using VisitsTracker.Models;
 
-namespace TrackerPackage.Mappers;
+namespace VisitsTracker.Mappers;
 
 public interface ITrackingMapper
 {

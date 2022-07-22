@@ -1,4 +1,4 @@
-﻿namespace TrackerPackage.Models;
+﻿namespace VisitsTracker.Models;
 
 public class Tracking
 {

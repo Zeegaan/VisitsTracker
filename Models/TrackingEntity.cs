@@ -2,7 +2,7 @@
 using Umbraco.Cms.Infrastructure.Persistence.DatabaseAnnotations;
 using Umbraco.Cms.Infrastructure.Persistence.Dtos;
 
-namespace TrackerPackage.Models;
+namespace VisitsTracker.Models;
 
 [TableName(TableName)]
 [PrimaryKey("Id", AutoIncrement = true)]

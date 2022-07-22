@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using TrackerPackage.Models;
-using Umbraco.Cms.Core.Services;
+﻿using Umbraco.Cms.Core.Services;
+using VisitsTracker.Models;
 
-namespace TrackerPackage.Mappers;
+namespace VisitsTracker.Mappers;
 
 public class TrackingMapper : ITrackingMapper
 {

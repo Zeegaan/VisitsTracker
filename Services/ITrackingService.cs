@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using TrackerPackage.Models;
+using VisitsTracker.Models;
 
-namespace TrackerPackage.Services;
+namespace VisitsTracker.Services;
 
 public interface ITrackingService
 {

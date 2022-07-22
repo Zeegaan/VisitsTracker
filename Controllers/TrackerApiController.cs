@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using TrackerPackage.Models;
-using TrackerPackage.Services;
 using Umbraco.Cms.Web.BackOffice.Controllers;
 using Umbraco.Cms.Web.Common.Attributes;
+using VisitsTracker.Models;
+using VisitsTracker.Services;
 
-namespace TrackerPackage;
+namespace VisitsTracker;
 
 [PluginController("My")]
 public class TrackerApiController : UmbracoAuthorizedJsonController
