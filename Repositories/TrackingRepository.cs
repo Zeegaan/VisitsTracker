@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Umbraco.Cms.Core.Cache;
 using Umbraco.Cms.Infrastructure.Persistence.Repositories.Implement;
 using Umbraco.Cms.Infrastructure.Scoping;
@@ -20,7 +21,7 @@ public class TrackingRepository : RepositoryBase, ITrackingRepository
             .From<TrackingEntity>()
             .Where<TrackingEntity>(x => x.NodeId == id);
 
-        return Database.First<TrackingEntity>(sql);
+        return Database.Fetch<TrackingEntity>(sql).FirstOrDefault();
     }
 
     public void Update(TrackingEntity entity)
