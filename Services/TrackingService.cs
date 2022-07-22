@@ -2,7 +2,6 @@
 using TrackerPackage.Mappers;
 using TrackerPackage.Models;
 using TrackerPackage.Repositories;
-using Umbraco.Cms.Core.Services;
 using Umbraco.Cms.Infrastructure.Scoping;
 
 namespace TrackerPackage.Services;
