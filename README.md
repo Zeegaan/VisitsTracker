@@ -10,9 +10,9 @@ and call the `ReportVisit(int contentId)` method where you pass the contents id,
 
 ```csharp
 @using VisitsTracker.Services
-@inject ITrackingService TrackingService;
+@inject ITrackingService _trackingService;
 @{
-    TrackingService.ReportVisit(Model.Id);
+    _trackingService.ReportVisit(Model.Id);
 }
 ```
 This does get tedious if you have a lot of templates though! But you are in luck, if all your views has a master template, you can just inject the above in your master template instead!
