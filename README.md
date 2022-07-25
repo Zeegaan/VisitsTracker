@@ -9,10 +9,10 @@ After installing this package, all you have to do is inject the `ITrackingServic
 and call the `ReportVisit(int contentId)` method where you pass the contents id, like so:
 
 ```csharp
-@using TrackerPackage.Services
-@inject ITrackingService TrackingService;
+@using VisitsTracker.Services
+@inject ITrackingService _trackingService;
 @{
-    TrackingService.ReportVisit(Model.Id);
+    _trackingService.ReportVisit(Model.Id);
 }
 ```
 This does get tedious if you have a lot of templates though! But you are in luck, if all your views has a master template, you can just inject the above in your master template instead!
