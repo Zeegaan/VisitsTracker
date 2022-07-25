@@ -9,7 +9,7 @@ After installing this package, all you have to do is inject the `ITrackingServic
 and call the `ReportVisit(int contentId)` method where you pass the contents id, like so:
 
 ```csharp
-@using TrackerPackage.Services
+@using VisitsTracker.Services
 @inject ITrackingService TrackingService;
 @{
     TrackingService.ReportVisit(Model.Id);
