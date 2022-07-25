@@ -1,10 +1,17 @@
 ﻿<div class="welcome-dashboard" ng-controller="CustomWelcomeDashboardController as vm">
     <h1>Welcome {{vm.UserName}} to the tracker dashboard!</h1>
     
-    <ul>
-        <li ng-repeat="tracking in vm.Trackings">
-            <h2><a href="/umbraco/#/content/content/edit/{{tracking.ContentId}}">{{tracking.ContentName}}</a></h2>
-            <h3>Number of visits: {{tracking.NumberOfVisits}}</h3>
-        </li>
-    </ul>
+    <!-- Layout: Cards -->
+    <div class="umb-user-cards">
+        <div class="umb-user-card umb-outline umb-outline--surrounding" ng-repeat="tracking in vm.Trackings">
+            <div class="umb-user-card__content">
+                <a class="umb-user-card__goToUser" href="/umbraco/#/content/content/edit/{{tracking.ContentId}}">
+                    <div class="umb-user-card__name">{{tracking.ContentName}}</div>
+                </a>
+                <div class="umb-user-card__group">
+                    <span>Number of visits: {{tracking.NumberOfVisits}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
