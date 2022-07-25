@@ -6,8 +6,8 @@
         <div class="umb-user-card umb-outline umb-outline--surrounding" ng-repeat="tracking in vm.Trackings">
             <div class="umb-user-card__content">
                 <a class="umb-user-card__goToUser" href="/umbraco/#/content/content/edit/{{tracking.ContentId}}">
-                    <div class="umb-user-card__avatar">
-                        <umb-icon icon="{{tracking.Icon}}"></umb-icon>
+                    <div class="umb-avatar">
+                        <umb-icon icon="{{tracking.Icon}}" class="large"></umb-icon>
                     </div>
                     <div class="umb-user-card__name">{{tracking.ContentName}}</div>
                 </a>
